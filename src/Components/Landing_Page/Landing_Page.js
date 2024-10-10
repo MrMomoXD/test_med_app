@@ -5,26 +5,6 @@ import "./LandingPage.css";
 const Landing_Page = () => {
   return (
     <>
-      <header>
-        <div className="container">
-          <div className="logo">
-            <h2>StayHealthy</h2>
-          </div>
-          <nav className="navbar">
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/appointments">Appointments</Link></li>
-              <li><Link to="/health-blog">Health Blog</Link></li>
-              <li><Link to="/reviews">Reviews</Link></li>
-            </ul>
-          </nav>
-          <div className="auth-buttons">
-            <button className="sign-up">Sign Up</button>
-            <button className="login">Login</button>
-          </div>
-        </div>
-      </header>
-
       <section className="hero-section">
         <div>
           <div data-aos="fade-up" className="flex-hero">
