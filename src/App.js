@@ -5,7 +5,8 @@ import Landing_Page from './Components/Landing_Page/Landing_Page'; // Import Lan
 import Login from './Components/Login/Login'; // Import Login component
 import Sign_Up from './Components/Sign_Up/Sign_Up'; // Import Sign_Up component
 import InstantConsultation from './Components/InstantConsultation/InstantConsultation';
-import Notification from './Components/Notification/Notification';   
+import Notification from './Components/Notification/Notification';
+import ReviewForm from './Components/ReviewForm/ReviewForm';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path="/login" element={<Login />} /> {/* Set Login as a route */}
           <Route path="/signup" element={<Sign_Up />} /> {/* Set Sign_Up as a route */}
           <Route path="/instant-consultation" element={<InstantConsultation />} />
-          <Route path="/notification" element={<Notification/>}/>        
+          <Route path="/notification" element={<Notification/>}/>
+          <Route path="/reviews" element={<ReviewForm/>}/>      
         </Routes>
       </BrowserRouter>
     </>
