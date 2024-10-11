@@ -72,17 +72,13 @@ const Navbar = () => {
         <li className="link">
          <Link to="/reviews">Reviews</Link>
         </li>
-        {isLoggedIn?(
-          <>
-            <li className="link">
-              <button className="btn2" onClick={handleLogout}>
-                Logout
-              </button>
-            </li>
-            
-          </>
+        {isLoggedIn ? (
+            <>
+                <li>Welcome, {username}</li>
+                <li><button onClick={handleLogout}>Logout</button></li>
+            </>
         ) : (
-          <>
+            <>
             <li className="link">
               <Link to="/signup">
                 <button className="btn1">Sign Up</button>
@@ -93,7 +89,7 @@ const Navbar = () => {
                 <button className="btn1">Login</button>
               </Link>
             </li>
-          </>
+            </>
         )}
       </ul>
     </nav>
